@@ -16,14 +16,14 @@ NUM_FLOW_CHANNELS = 2
 
 NUM_CLASSES = 400
 
-LABEL_MAP_PATH = 'data/label_map.txt'
+LABEL_MAP_PATH = '../data/label_map.txt'
 
 def main(args):
 
     SAMPLE_DATA_PATH = {
         # 'rgb' : 'data/v_CricketShot_g04_c01_rgb.npy',
-        'rgb': 'data/' + args.video_name + '_rgb.npy',
-        'flow': 'data/'+ args.video_name + '_flow.npy'
+        'rgb': '../data/' + args.video_name + '_rgb.npy',
+        'flow': '../data/'+ args.video_name + '_flow.npy'
     }
 
     # load the kinetics classes
