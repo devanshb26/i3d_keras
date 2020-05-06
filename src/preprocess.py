@@ -144,11 +144,11 @@ def main(args):
     video_name = args.video_path.split("/")[-1][:-4]
 
     rgb = run_rgb(sorted_list_frames)
-    npy_rgb_output = 'data/' + video_name + '_rgb.npy'
+    npy_rgb_output = '../data/' + video_name + '_rgb.npy'
     np.save(npy_rgb_output, rgb)
 
     flow = run_flow(sorted_list_frames)
-    npy_flow_output = 'data/' + video_name + '_flow.npy'
+    npy_flow_output = '../data/' + video_name + '_flow.npy'
     np.save(npy_flow_output, flow)
 
 
