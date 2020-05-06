@@ -155,8 +155,8 @@ def main(args):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--path_output', type=str, default="data/frames/")
-    parser.add_argument('--video_path', type=str, default="data/input_videos/cricket.avi")
+    parser.add_argument('--path_output', type=str, default="../data/frames/")
+    parser.add_argument('--video_path', type=str, default="../data/input_videos/cricket.avi")
 
     args = parser.parse_args()
 
